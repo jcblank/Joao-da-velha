@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: gray;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 100px;
+}
+
+.square {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.o {
+    position: relative;
+}
+
+.o:after{
+    position: absolute;
+    content: "o";
+    font-size: 80px;
+    line-height: 150px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x:after{
+    position: absolute;
+    content: "x";
+    font-size: 80px;
+    line-height: 150px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: red;
+}
